@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoye Jabe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.12.23/full.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+<header class="shadow">
+  <div class="navbar bg-base-100 shadow-md rounded-lg">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a>Home</a></li>
+          <li>
+            <a>Services</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-2xl font-bold text-primary">HoyeJabe</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a class="hover:text-primary-focus">Home</a></li>
+        <li>
+          <details>
+            <summary class="hover:text-primary-focus">Services</summary>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a class="hover:text-primary-focus">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end gap-x-4">
+      <a class="btn btn-primary rounded-full">Login</a>
+      <a class="btn btn-outline btn-primary rounded-full">Register</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<div class="relative w-full h-[500px] bg-cover bg-center" style="background-image: url('/img/tech-repair.jpg');">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+    <h1 class="text-5xl font-bold mb-4 animate-fade-in">Home Service Plus</h1>
+    <p class="text-2xl mb-6">Keep your home - and your family's lives - running smoothly.</p>
+    
+    <!-- Search Bar -->
+    <div class="container mx-auto px-[200px]">
+      <div class="flex w-full max-w-4xl mx-auto rounded-full shadow-lg overflow-hidden border border-gray-300 bg-white">
+        <!-- Location Dropdown with Icon -->
+        <div class="flex items-center px-4 border-r border-gray-300">
+          <i class="fa-solid fa-location-dot text-gray-500 text-lg mr-2"></i>
+          <select class="appearance-none bg-transparent text-gray-700 focus:outline-none">
+            <option disabled selected>Location</option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+            <option>Chicago</option>
+            <option>Houston</option>
+            <option>San Francisco</option>
+          </select>
+        </div>
+
+        <!-- Search Input -->
+        <input 
+          type="text" 
+          placeholder="Search services" 
+          class="flex-1 px-4 py-2 focus:outline-none text-gray-700" />
+
+        <!-- Call Us Button -->
+        <button class="px-6 py-2 bg-primary text-white font-medium hover:bg-primary-focus focus:outline-none">Call Us</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mx-auto px-[200px]">
+  <!-- services -->
+
+
+
+ 
+
+<section class="py-12">
+  <div>
+    <h2 class="text-4xl font-bold mb-6 text-primary text-center">Our Services</h2>
+  </div>
+  <div class="flex w-full p-10 gap-x-5">
+    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
+    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
+    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
+    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
+    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
+    
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-6 text-primary text-center">Why Choose Us?</h2>
+    <p class="text-lg text-gray-600 mb-12 text-center">We provide reliable and efficient services to make your life easier.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fa-solid fa-tools text-4xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Expert Technicians</h3>
+        <p class="text-gray-600">Our skilled professionals ensure quality service every time.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fa-solid fa-clock text-4xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Timely Service</h3>
+        <p class="text-gray-600">We value your time and complete tasks promptly.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fa-solid fa-thumbs-up text-4xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Customer Satisfaction</h3>
+        <p class="text-gray-600">Your happiness is our top priority.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+</body>
+</html>
