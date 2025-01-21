@@ -1,154 +1,256 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="corporate">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoye Jabe</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.12.23/full.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoye Jabe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.12.23/full.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body class="bg-gray-100">
 
-<header class="shadow">
-  <div class="navbar bg-base-100 shadow-md rounded-lg">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
+  <header class="shadow">
+    <div class="navbar bg-base-100 shadow-md rounded-lg">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li>
+              <a>Services</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a>Contact Us</a></li>
+          </ul>
         </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li><a>Home</a></li>
+        <a class="btn btn-ghost text-2xl font-bold text-primary">HoyeJabe</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="hover:text-primary-focus">Home</a></li>
           <li>
-            <a>Services</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
+            <details>
+              <summary class="hover:text-primary-focus">Services</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
           </li>
-          <li><a>Contact Us</a></li>
+          <li><a class="hover:text-primary-focus">Contact Us</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-2xl font-bold text-primary">HoyeJabe</a>
+      <div class="navbar-end gap-x-4">
+        <a class="btn btn-primary rounded-full">Login</a>
+        <a class="btn btn-outline btn-primary rounded-full">Register</a>
+      </div>
     </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a class="hover:text-primary-focus">Home</a></li>
-        <li>
-          <details>
-            <summary class="hover:text-primary-focus">Services</summary>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><a class="hover:text-primary-focus">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end gap-x-4">
-      <a class="btn btn-primary rounded-full">Login</a>
-      <a class="btn btn-outline btn-primary rounded-full">Register</a>
-    </div>
-  </div>
-</header>
+  </header>
 
-<!-- Hero Section -->
-<div class="relative w-full h-[500px] bg-cover bg-center" style="background-image: url('/img/tech-repair.jpg');">
-  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-    <h1 class="text-5xl font-bold mb-4 animate-fade-in">Home Service Plus</h1>
-    <p class="text-2xl mb-6">Keep your home - and your family's lives - running smoothly.</p>
-    
-    <!-- Search Bar -->
-    <div class="container mx-auto px-[200px]">
-      <div class="flex w-full max-w-4xl mx-auto rounded-full shadow-lg overflow-hidden border border-gray-300 bg-white">
-        <!-- Location Dropdown with Icon -->
-        <div class="flex items-center px-4 border-r border-gray-300">
-          <i class="fa-solid fa-location-dot text-gray-500 text-lg mr-2"></i>
-          <select class="appearance-none bg-transparent text-gray-700 focus:outline-none">
-            <option disabled selected>Location</option>
-            <option>New York</option>
-            <option>Los Angeles</option>
-            <option>Chicago</option>
-            <option>Houston</option>
-            <option>San Francisco</option>
-          </select>
+  <!-- Hero Section -->
+  <div class="relative w-full h-[500px] bg-cover bg-center" style="background-image: url('/img/tech-repair.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <h1 class="text-5xl font-bold mb-4 animate-fade-in">Home Service Plus</h1>
+      <p class="text-2xl mb-6">Keep your home - and your family's lives - running smoothly.</p>
+
+      <!-- Search Bar -->
+      <div class="container mx-auto px-[200px]">
+        <div
+          class="flex w-full max-w-4xl mx-auto rounded-full shadow-lg overflow-hidden border border-gray-300 bg-white">
+          <!-- Location Dropdown with Icon -->
+          <div class="flex items-center px-4 border-r border-gray-300">
+            <i class="fa-solid fa-location-dot text-gray-500 text-lg mr-2"></i>
+            <select class="appearance-none bg-transparent text-gray-700 focus:outline-none">
+              <option disabled selected>Location</option>
+              <option>New York</option>
+              <option>Los Angeles</option>
+              <option>Chicago</option>
+              <option>Houston</option>
+              <option>San Francisco</option>
+            </select>
+          </div>
+
+          <!-- Search Input -->
+          <input type="text" placeholder="Search services"
+            class="flex-[2] px-4 py-2 focus:outline-none text-gray-700" />
+
+          <!-- Call Us Button -->
+          <button class="px-6 py-2 bg-primary text-white font-medium hover:bg-primary-focus focus:outline-none">Call
+            Us</button>
         </div>
-
-        <!-- Search Input -->
-        <input 
-          type="text" 
-          placeholder="Search services" 
-          class="flex-1 px-4 py-2 focus:outline-none text-gray-700" />
-
-        <!-- Call Us Button -->
-        <button class="px-6 py-2 bg-primary text-white font-medium hover:bg-primary-focus focus:outline-none">Call Us</button>
       </div>
+
     </div>
   </div>
-</div>
 
 
-<div class="container mx-auto px-[200px]">
-  <!-- services -->
+  <div class="container mx-auto px-[200px]">
+    <!-- services -->
 
 
 
- 
 
-<section class="py-12">
-  <div>
-    <h2 class="text-4xl font-bold mb-6 text-primary text-center">Our Services</h2>
-  </div>
-  <div class="flex w-full p-10 gap-x-5">
-    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
-    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
-    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
-    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
-    <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">content</div>
-    
-  </div>
-</section>
 
-<!-- Features Section -->
-<section class="py-12">
-  <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold mb-6 text-primary text-center">Why Choose Us?</h2>
-    <p class="text-lg text-gray-600 mb-12 text-center">We provide reliable and efficient services to make your life easier.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <i class="fa-solid fa-tools text-4xl text-primary mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Expert Technicians</h3>
-        <p class="text-gray-600">Our skilled professionals ensure quality service every time.</p>
+    <section class="py-12">
+      <div>
+        <h2 class="text-4xl font-bold mb-6 text-primary text-center">Our Services</h2>
       </div>
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <i class="fa-solid fa-clock text-4xl text-primary mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Timely Service</h3>
-        <p class="text-gray-600">We value your time and complete tasks promptly.</p>
+      <div id="contentCarousel" class="carousel w-full">
+        <!-- Slide 1 -->
+        <div id="contentSlide1" class="carousel-item relative w-full">
+          <div class="flex w-full p-10 gap-x-5">
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 1</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 2</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 3</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 4</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 5</div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#contentSlide3" class="btn btn-circle">❮</a>
+            <a href="#contentSlide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div id="contentSlide2" class="carousel-item relative w-full">
+          <div class="flex w-full p-10 gap-x-5">
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 6</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 7</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 8</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 9</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 10</div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#contentSlide1" class="btn btn-circle">❮</a>
+            <a href="#contentSlide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div id="contentSlide3" class="carousel-item relative w-full">
+          <div class="flex w-full p-10 gap-x-5">
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 11</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 12</div>
+            <div class="card shadow-lg rounded-box grid h-20 flex-grow place-items-center">Content 13</div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#contentSlide2" class="btn btn-circle">❮</a>
+            <a href="#contentSlide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
       </div>
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <i class="fa-solid fa-thumbs-up text-4xl text-primary mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Customer Satisfaction</h3>
-        <p class="text-gray-600">Your happiness is our top priority.</p>
+    </section>
+
+    <!-- Separate Picture Carousel -->
+    <section class="py-12">
+      <div>
+        <h2 class="text-4xl font-bold mb-6 text-primary text-center py-12">Gallery</h2>
+      </div>
+      <div id="pictureCarousel" class="carousel w-full">
+        <!-- Slide 1 -->
+        <div id="pictureSlide1" class="carousel-item relative w-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#pictureSlide3" class="btn btn-circle">❮</a>
+            <a href="#pictureSlide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div id="pictureSlide2" class="carousel-item relative w-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#pictureSlide1" class="btn btn-circle">❮</a>
+            <a href="#pictureSlide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div id="pictureSlide3" class="carousel-item relative w-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#pictureSlide2" class="btn btn-circle">❮</a>
+            <a href="#pictureSlide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <div class="container mx-auto px-4 py-12">
+      <div>
+        <h2 class="text-4xl font-bold mb-6 text-primary text-center py-12">3 Steps To Get the Services</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- YouTube Video Section -->
+        <div class="flex justify-center items-center">
+          <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank"
+            class="relative block w-full max-w-md overflow-hidden rounded-lg shadow-lg">
+            <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="YouTube Thumbnail"
+              class="w-full h-auto" />
+            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+              <i class="fa-solid fa-circle-play text-white text-6xl"></i>
+            </div>
+          </a>
+        </div>
+        <!-- Steps Section -->
+        <div class="flex justify-center items-center">
+          <ul class="steps steps-vertical w-full max-w-md h-full">
+            <li class="step step-primary">Register</li>
+            <li class="step step-primary">Choose Plan</li>
+            <li class="step">Purchase</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-</div>
 
+  </div>
+
+  <footer class="footer footer-center bg-base-200 text-base-content rounded py-12">
+    <nav class="grid grid-flow-col gap-4">
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <aside>
+      <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+    </aside>
+  </footer>
 </body>
+
 </html>
